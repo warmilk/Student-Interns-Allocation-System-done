@@ -1,0 +1,183 @@
+
+.mC-head_search{
+    position: relative;
+    float: left;
+    width: auto;
+}
+.mC-head_sort{
+    float: left;
+}
+
+
+.mC-head_search input{
+    font-size: 12px;
+    display: inline-block;
+/*     margin:2px 0px 2px 600px; */
+/*     line-height: 30px; */
+    display: inline-block;
+    vertical-align: -8px;
+    height: 20px;
+    width: 235px;
+    border-radius:20px;
+    border:1px solid #ccc;
+    text-indent: 1em;
+/*     margin-right: 20px; */
+}
+.mC-head_search button{
+    
+    background:  #34495E;
+    height: 19px;
+    width: 19px;
+    border-radius: 20px;
+    position: absolute;
+    right: 3px;
+    top: 7px;
+}
+.mC-head_search button img{
+    width: 11px;
+/*     margin:0 auto; */
+    margin-left: -3px;
+}
+.mC-head_sort{
+/*     display: inline-block; */
+    position: relative;
+}
+.mC-head_sort button{
+    display: inline-block;
+    vertical-align: -8px;
+    margin-left: 10px;
+    position: relative;
+    font-size: 10px;
+    width: 90px;
+    height:20px;
+    border-radius: 20px;
+     background:  #34495E;
+}
+.dropdown-btn span{
+    position: relative;
+    left: -0.75em;
+}
+.mC-head_sort i{
+    position: absolute;
+    right: -1.5em;
+/*     padding-left: 3%; */
+    font-size: 11px;
+}
+.mC-head_sortMeau{
+/*     display: inline-block; */
+    overflow: hidden;
+    background:  #34495E;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100px;
+}
+.mC-head_sortMeau a{
+/*     background: #fff; */
+    margin:15px 15px;
+    font-size: 12px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.mC-head_sortMeau a:hover{
+    color: #6AD1FA;
+}
+.mC-table{
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 15px;
+/*     margin-top: 20px; */
+    margin:20px auto 30px auto;    /*如果你写的margin突然不起作用了，看下是不是同一个选择器里有margin：0 auto;*/
+    clear: both;
+    width: 1100px;
+    background: #fff;
+    box-shadow: 0px 0px 3px  #aaa;
+}
+.mC-table table img{
+    margin:10px 10px 10px 0;
+    width: 18px;
+}
+.mC-table thead th{
+    color:#02B7FE;
+/*     font-weight: 500; */
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+/*     padding:10px 0px; */
+    text-align: left;
+   
+}
+.mC-table td:nth-child(2) a{
+    color:#000;
+    text-decoration: none;
+}
+.mC-table td:nth-child(2) a:hover{
+    color:  #12a5b0;
+/*     text-decoration: underline; */
+}
+.mC-table td:nth-child(2){
+     padding-right: 55px;
+}
+.mC-table td:nth-child(3){
+     padding-right: 60px;
+}
+.mC-table td:nth-child(4){
+     padding-right: 50px;
+}
+.mC-table td:nth-child(5){
+     padding-right: 55px;
+}
+.mC-table td:nth-child(6){
+     padding-right: 65px;
+}
+.mC-table td:nth-child(7){
+    padding-right: 90px;
+}
+.mC-table td:last-child button{
+    width: 55px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 11px;
+}
+.nonSelect-Btn{
+    cursor: not-allowed;
+    background: #ddd;
+    color: #666;
+}
+.nonSelect-Btn:hover{
+    cursor: not-allowed;
+}
+.Select-Btn{
+    background: #12b5b0;
+}
+.mC-table td{
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+/* 回到顶部按钮开始 */
+.goTop_Btn{
+    border-radius: 5px;
+    position: fixed;
+    right:15px;
+    bottom:15px;
+    height: 40px;
+    width: 40px;
+    background:#2B2E3D;
+    color: #fff;
+    opacity: 0.5;
+    filter:alpha(opacity:50);
+    text-decoration: none;
+}
+.goTop_Btn i{
+    line-height: 40px;
+    margin:0 11px;
+}
+/* 回到顶部按钮结束 */
+
+
+
+
+
+

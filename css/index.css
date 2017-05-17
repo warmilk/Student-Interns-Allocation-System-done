@@ -1,0 +1,192 @@
+/*normalizeCSS*/
+@import url(normalize.css);
+
+body{
+    /*background-image: url(../images/109951162780351586.jpg);  
+    background-repeat: no-repeat;
+    background-size: 80%,80%;*/
+    background: #69b8d2;
+    font-family:"Microsoft YaHei","微软雅黑";
+    font-size:15px;
+}
+.container{
+    box-shadow: 0px 0px 30px #3a94b1;
+    transform: scale(0.96,0.96);
+    
+}
+.btn{
+    font-size: 14px;
+    width:255px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.container{
+    width: 1130px;
+    margin:0 auto;
+}
+.login{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    height: 635px;
+    width: 330px;
+    background: #fff;
+}
+.showResult{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 635px;
+    background: #ECF0F1;
+    width: 800px;
+    float: right;
+}
+.login-logo{
+    margin:0 auto;
+    display: table;
+    padding-top: 50px;
+}
+.login-logo img{
+    width: 200px;
+}
+.login-form{
+    position: relative;
+    margin:0 auto;
+    display: table;
+}
+.login-form-input{
+    position: relative;
+    height:38px;
+    width: 253px;
+    border:1px solid #ddd;
+    box-shadow: 0px 0px 3px  #ddd;
+    margin:15px 0;
+}
+
+.login-form-input img{
+    width: 16px;
+    padding:12px;
+}
+.login-form-input_line{
+    position: absolute;
+    left: 37px;
+    top:10px;
+    display: inline-block;
+    height: 20px;
+    width: 1px;
+    background: #ccc;
+}
+.login-form-input input{
+    font-size: 13px;
+    padding-left: 10px;
+    width: 200px;
+    vertical-align: top;
+    line-height: 38px;
+    background:transparent;
+    border:none;
+    outline: none;
+}
+.login-form-subBtn{  
+    background: #34495E;
+}
+.login-form-aboutPW{
+    margin-top: 8px;
+    color:#34495E;
+/*     font-weight: 500; */
+    font-size: 12px;
+    -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+}
+.login-form-aboutPW a{
+    text-decoration: none;
+    float: right;
+    color:#34495E;
+}
+.login-form-aboutPW_checked{
+    display: inline-block;
+    background:#1B9ADE;
+    width: 12px;
+    height: 13px;
+/*     line-height: 10px; */
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+.login-form-aboutPW_disChecked{
+    display: inline-block;
+    border:1px solid #ccc;
+    background:#fff;
+    width: 12px;
+    height: 13px;
+/*     line-height: 10px; */
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+.login-form-aboutPW input{
+/*     visibility: hidden; */
+}
+.login-form-adminBtn{
+    position: absolute;
+    top:300px;
+    z-index: 1000;
+    background: #1B9ADE;
+}
+.login-bgImg{
+    position: absolute;
+    bottom: 0px;
+}
+.login-bgImg img{
+    width: 333px;
+}
+.showResult-title h4{
+    margin: 0;
+}
+.showResult-title{
+    padding-top: 35px;
+    color:#888;
+    font-size: 18px;
+    width: 640px;
+    margin:0 auto;
+    border-bottom: 3px solid #02B7FE;
+    margin-bottom: 25px;
+}
+.showResult-title h4{
+    padding:10px 20px;
+/*     font-weight: 600; */
+}
+.showResult-table{
+    border-radius: 5px;
+    padding:3px 15px;
+    box-shadow: 0px 0px 1px  #ccc;
+    border:1px solid #ddd;
+    margin:0 auto;
+    background: #fff;
+    width: 640px;
+    height: 460px;
+}
+.showResult-table img{
+    vertical-align: middle;
+    width: 22px;
+}
+.showResult-table th{
+    text-align: left;
+    color:  #1B9ADE;
+    border-bottom: 1px solid #ddd;
+}
+.showResult-table tbody{
+    color: #666;
+}
+/*font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", sans-serif;*/
+/*万能的font-family*/

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+	<title>深圳市龙岗中心医院 | 实习分配系统</title>
+	<!-- 引入公共布局的css，头部的logo和搜索栏，以及左侧导航条，右侧主要内容区的公共布局和widge -->
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	
+	<!-- 从外部引入这个页面用到的小icon的iconfont -->
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_3xfq2v964oyldi.css">
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_0rarwsxllqiftj4i.css">
+
+	<!-- jRange -->
+	<link rel="stylesheet" type="text/css" href="jRange/jquery.range.css">
+
+	<!-- tooltipster -->
+	<link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css">
+
+	<!-- webUIpopover -->
+	<link rel="stylesheet" type="text/css" href="webUIpopover/dist/jquery.webui-popover.min.css">
+
+	<!-- 自己写的 -->
+	<link rel="stylesheet" type="text/css" href="css/stu_rule.css">
+
+	
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+	<![endif]-->
+</head>
+<body>
+	<!--[if lt IE 9]>
+		<div class="alert-danger" role="alert">
+			你的浏览器实在<strong>太太太太太太旧了</strong>，导致页面无法完美显示渲染。放学别走，升级完浏览器再说 → <a target="_blank" class="alert-danger-anchor" href="http://browsehappy.com">立即升级</a>
+		</div>
+	<![endif]-->
+
+	<div class="container">
+		<div class="header">
+			<header>
+				<div class="header-search">
+					<button class="btn"><span>高级搜索</span><i class="xk-shouqi-copy xsxkxtFont"></i></button>
+
+					<input type="text" name="" placeholder="请输入实习城市关键字"><button class="btn"><img src="images/main_searchIcon.png"></button>
+				</div>
+				<div class="header-logo1">
+					<img src="images/main_logo_1.jpg">
+				</div>
+				<div class="hearder-logo2">
+					<img src="images/main_logo_2.jpg">
+				</div>
+			</header>
+		</div>
+
+		<div class="content">
+			<main>
+				<!-- 左侧导航栏 -->
+				<div class="mainNav">
+					<div class="mainNav-li_usr">
+						<div class="wrapper">
+							<div class="mainNav-li_usr_tx">
+								<img src="images/mainNav-usr.png">
+							</div>
+							<div class="mainNav-li_usr_info">
+								<h4>邓曲英</h4>
+								<p>信工学院学生</p>
+							</div>
+						</div>
+					</div>
+					
+					<nav>
+						<div class="mainNav-li mainNav-li1">
+							<div class="wrapper">
+								<a href="javascript:void(0);"><img src="images/stu_nav3.png">实习单位信息</a>
+							</div>
+						</div>
+						<div class="mainNav-li mainNav-li2 mainNav-li_current">
+							<div class="wrapper">
+								<a href="javascript:void(0);"><img src="images/stu_nav4.png">实习分配制度</a>
+							</div>
+						</div>
+						<div class="mainNav-li mainNav-li3">
+							<div class="wrapper">
+								<a href="javascript:void(0);"><img src="images/stu_nav2.png">我的实习志愿</a>
+							</div>
+						</div>
+						<div class="mainNav-li mainNav-li4">
+							<div class="wrapper">
+								<a href="javascript:void(0);"><img src="images/stu_nav1.png">实习分配结果</a>
+							</div>
+						</div>
+						<div class="mainNav-li mainNav-li5">
+							<div class="wrapper">
+								<a href="javascript:void(0);"><img src="images/stu_nav1.png">个人资料</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+
+
+
+
+
+
+
+				<!-- 右侧主要内容区 -->
+				<div class="mainContent">
+					<div class="tip">
+						<p>同学们请在&nbsp;<strong>2017年5月12日</strong>&nbsp;-&nbsp;<strong>2017年5月20日</strong>&nbsp;之内的时间范围完成志愿填报！否则过时将由教师手动分配！</p><i class="iconfont icon-cuo"></i>
+					</div>
+
+					<div class="mC-head">
+						<div class="mC-head_title">
+							<div><h4>实习分配制度</h4></div>
+						</div>
+						<div class="mC-head_sort">
+							<button class="btn popoverBtn" data-title="核心算法"  data-placement="bottom-left">查看核心算法</button>
+							<!-- <div id="myContent" class="webui-popover-content">
+							   <p>综合测评成绩（大学三年平均分）* 60% </p>
+							</div> -->
+						</div>
+					</div>
+
+					<div class="role">
+						<form>
+							<!-- 滑动条 -->
+							<div class="rule-item">
+								<span>综合测评成绩：</span>
+								<span class="tooltip" title="综合测评成绩（大学三年平均分）* 60%">
+									<input type="hidden" class="slider single-slider zhcpcj-slider" value="60" />
+								</span>
+							</div>
+							<div class="rule-item">
+								<span>我的个人志愿：</span>
+								<span class="tooltip" title="我的个人志愿（第一志愿100%；第二志愿80%；第三志愿60%；）* 10%">
+									<input type="hidden" class="slider single-slider wdgrzy-slider" value="10" />
+								</span>
+							</div>
+							<div class="rule-item">
+								<span>实习单位地址：</span>
+								<span class="tooltip" title="实习单位地址 * 5%">
+									<input type="hidden" class="slider single-slider sxdwdz-slider" value="5" />
+								</span>
+							</div>
+							<div class="rule-item">
+								<span>我户籍所在地：</span>
+								<span class="tooltip" title="户籍所在地 * 5%">
+									<input type="hidden" class="slider single-slider hjszd-slider" value="5" />
+								</span>
+							</div>
+							<div class="rule-item">
+								<span>我的项目次数：</span>
+								<span class="tooltip" title="我的项目次数 * 15%">
+									<input type="hidden" class="slider single-slider wdxmcs-slider" value="15" />
+								</span>
+							</div>
+							<div class="rule-item">
+								<span>累计逃课次数：</span>
+								<span class="tooltip" title="累计逃课次数 * 5%">
+									<input type="hidden" class="slider single-slider ljtkcs-slider" value="5" />
+								</span>
+							</div>
+							
+							
+
+						</form>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+		   $(".icon-cuo").click(function() {
+		   		$(".tip").hide();
+		   });
+		});
+	</script>
+
+
+	<!-- jRange官方文档：http://nitinhayaran.github.io/jRange/demo/ -->
+	<script type="text/javascript" src="jRange/jquery.range.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+            $('.single-slider').jRange({
+                from: 0,
+                to: 100,
+                step: 1,
+                scale: [0,25,50,75,100],
+                format: '%s',
+                width: 1000,
+                showLabels: true,
+                showScale:false,
+                snap: true
+            });
+            // $('.range-slider').jRange({
+            //     from: 0,
+            //     to: 100,
+            //     step: 1,
+            //     scale: [0,25,50,75,100],
+            //     format: '%s',
+            //     width: 900,
+            //     showLabels: true,
+            //     isRange : true
+            // });
+            
+
+            // 设置各条滑动条初始数值
+            $('.zhcpcj-slider').jRange('setValue', '60');
+            $('.wdgrzy-slider').jRange('setValue', '10');
+            $('.sxdwdz-slider').jRange('setValue', '5');
+            $('.hjszd-slider').jRange('setValue', '5');
+            $('.wdxmcs-slider').jRange('setValue', '10');
+            $('.ljtkcs-slider').jRange('setValue', '5');
+
+
+            // 让滑动块无法拖动（让用户禁用水平滑动条）
+            $('.slider').jRange('disable');
+        });
+    </script>
+
+
+	<!-- tooltipster官方文档：http://iamceege.github.io/tooltipster/ -->
+	<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script> -->
+    <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+            $('.tooltip').tooltipster({
+                theme: 'tooltipster-shadow'
+            });
+        });	
+    </script>
+	
+	<!-- webUIpopover官方文档：https://github.com/sandywalker/webui-popover -->
+    <script type="text/javascript" src="webUIpopover/dist/jquery.webui-popover.min.js"></script>
+    <script type="text/javascript">
+    	$('.popoverBtn').webuiPopover({
+    		content:'<div style="text-align: center; color:#4A4A4A;"><p><strong>综合测评成绩</strong>（大学三年平均分）* 60%</p><p>+</p><p><strong>我的个人志愿</strong>（第一志愿100%；第二志愿80%；第三志愿60%；）* 10%</p><p>+</p><p><strong>实习单位地址</strong> * 5%</p><p>+</p><p><strong>户籍所在地</strong> * 5%</p><p>+</p><p><strong>我的项目次数</strong> * 15%</p><p>+</p><p><strong>累计逃课次数</strong> * 5%</p></div>',
+    		closeable:true,
+    		animation:'pop',
+    		// url:'#myContent'
+    		// trigger:'hover'
+    	});
+    </script>
+</body>
+</html>
+
+
+

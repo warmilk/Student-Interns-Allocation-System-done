@@ -1,0 +1,17 @@
+.alert-danger{
+    height: 50px;
+    width:100%;
+    background:#F2C864;
+    border-bottom:1px solid #C84442;
+    text-align: center;
+    line-height: 50px;
+    color:#C84442;
+}
+.alert-danger-anchor{
+    color:#A94442;
+    font-weight: 800;
+    text-decoration: none;
+}
+.alert-danger-anchor:active,.alert-danger-anchor:hover{
+    text-decoration: underline;
+}

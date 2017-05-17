@@ -1,0 +1,54 @@
+.del-btn{
+    background: #DD422C;
+}
+.mainContent{
+    min-height: 800px;
+}
+
+.mC-table .text-td td{
+    padding:10px 0;
+/*     text-align: left; */
+    width: 50px;
+    background:;
+}
+.mC-head_title{
+    margin-right: 0;
+}
+.mC-head_title h4{
+    display: inline-block;
+}
+.mC-head_title span{
+    margin-left: 1em;
+    color: #999;
+    cursor: pointer;
+}
+.mC-head_title span:hover{
+    color: #02B7FE;
+}
+.hxsxzy{
+/*     margin-top: 20px; */
+}
+
+
+.submitBtn,
+.saveBtn{
+    padding: 0 1.5em;
+    float: right;
+    display: inline-block;
+/*     vertical-align: -8px; */
+    margin-left: 10px;
+    position: relative;
+    font-size: 11px;
+    
+    height: 2em;
+    border-radius: 7px;
+    background: #34495E;
+}
+
+
+
+
+
+
+
+

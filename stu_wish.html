@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+	<title>深圳市龙岗中心医院 | 实习分配系统</title>
+	<!-- 引入公共布局的css，头部的logo和搜索栏，以及左侧导航条，右侧主要内容区的公共布局和widge -->
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	
+	<!-- 从外部引入这个页面用到的小icon的iconfont -->
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_3xfq2v964oyldi.css">
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_0rarwsxllqiftj4i.css">
+	
+	<!-- webUIpopover -->
+	<link rel="stylesheet" type="text/css" href="webUIpopover/dist/jquery.webui-popover.min.css">
+
+	<!-- 弹出式确认框showbo -->
+	<link rel="stylesheet" type="text/css" href="showBox/css/showBo.css">
+	
+
+	<!-- 小动画animati -->
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
+
+
+	<!-- 自己写的 -->
+	<link rel="stylesheet" type="text/css" href="css/stu1.css">
+	<link rel="stylesheet" type="text/css" href="css/stu_wish.css">
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+	<![endif]-->
+</head>
+<body>
+	<!--[if lt IE 9]>
+		<div class="alert-danger" role="alert">
+			你的浏览器实在<strong>太太太太太太旧了</strong>，导致页面无法完美显示渲染。放学别走，升级完浏览器再说 → <a target="_blank" class="alert-danger-anchor" href="http://browsehappy.com">立即升级</a>
+		</div>
+	<![endif]-->
+
+	<div class="container">
+		<div class="header">
+			<header>
+				<div class="header-search">
+					<button class="btn"><span>高级搜索</span><i class="xk-shouqi-copy xsxkxtFont"></i></button>
+
+					<input type="text" name="" placeholder="请输入实习城市关键字"><button class="btn"><img src="images/main_searchIcon.png"></button>
+				</div>
+				<div class="header-logo1">
+					<img src="images/main_logo_1.jpg">
+				</div>
+				<div class="hearder-logo2">
+					<img src="images/main_logo_2.jpg">
+				</div>
+			</header>
+		</div>
+
+		<div class="content">
+			<main>
+				<!-- 左侧导航栏 -->
+				<div class="mainNav">
+					<div class="mainNav-li_usr">
+						<div class="wrapper">
+							<div class="mainNav-li_usr_tx">
+								<img src="images/mainNav-usr.png">
+							</div>
+							<div class="mainNav-li_usr_info">
+								<h4>邓曲英</h4>
+								<p>信工学院学生</p>
+							</div>
+						</div>
+					</div>
+					
+					<nav>
+						<div class="mainNav-li mainNav-li1">
+							<div class="wrapper">
+								<a href="javascript:void(0);"><img src="images/stu_nav3.png">实习单位信息</a>
+							</div>
+						</div>
+						<div class="mainNav-li mainNav-li2">
+							<div class="wrapper">
+								<a href="javascript:void(0);"><img src="images/stu_nav4.png">实习分配制度</a>
+							</div>
+						</div>
+						<div class="mainNav-li mainNav-li3 mainNav-li_current">
+							<div class="wrapper">
+								<a href="javascript:void(0);"><img src="images/stu_nav2.png">我的实习志愿</a>
+							</div>
+						</div>
+						<div class="mainNav-li mainNav-li4">
+							<div class="wrapper">
+								<a href="javascript:void(0);"><img src="images/stu_nav1.png">实习分配结果</a>
+							</div>
+						</div>
+						<div class="mainNav-li mainNav-li5">
+							<div class="wrapper">
+								<a href="javascript:void(0);"><img src="images/stu_nav1.png">个人资料</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+
+
+
+
+
+
+
+				<!-- 右侧主要内容区 -->
+				<div class="mainContent">
+					<div class="tip">
+						<p>同学们请在&nbsp;<strong>2017年5月12日</strong>&nbsp;-&nbsp;<strong>2017年5月20日</strong>&nbsp;之内的时间范围完成志愿填报！否则过时将由教师手动分配！</p><i class="iconfont icon-cuo"></i>
+					</div>
+
+					<section class="dydedszy">
+						<div class="mC-head">
+							<div class="mC-head_title">
+								<div><h4>第一第二第三实习志愿</h4><span class="popoverSpan-dydeds" data-title="规则"  data-placement="bottom-right">（点击查看规则）</span></div>
+							</div>
+							<button class="btn saveBtn" title="仅保存您的当前编辑但不会被提交哦">仅保存</button>
+							<button class="btn submitBtn" title="直接提交">直接提交</button>
+						</div>
+						
+						<!-- 第一志愿的table -->
+						<div class="mC-table">
+							<table>
+								<thead>
+									<tr>
+										<th><img src="images/login_laba1.jpg"></th><th>单位名称<span class="zyTxt">（第一志愿）</span></th><th>职位</th><th>薪酬</th><th>实习日期</th><th>性别限制</th><th>需要/已选</th><th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="images/login_laba2.jpg"></td><td><a href="#">广州市第一军医人民附属医院</a></td><td>信息科主任</td><td class="money-td">4000元&nbsp;-&nbsp;5000元</td><td class="date-td">2016.09.14&nbsp;-&nbsp;2017.01.30</td><td>--&nbsp;--</td><td class="personCount-td">5人/18人</td><td class="Select-td"><button class="btn  Select-Btn del-btn">删除</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<!-- 第二志愿table -->
+						<div class="mC-table">
+							<table>
+								<thead>
+									<tr>
+										<th><img src="images/login_laba1.jpg"></th><th>单位名称<span class="zyTxt">（第二志愿）</span></th><th>职位</th><th>薪酬</th><th>实习日期</th><th>性别限制</th><th>需要/已选</th><th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="images/login_laba2.jpg"></td><td><a href="#">广州市第一军医人民附属医院</a></td><td>信息科主任</td><td class="money-td">4000元&nbsp;-&nbsp;5000元</td><td class="date-td">2016.09.14&nbsp;-&nbsp;2017.01.30</td><td>--&nbsp;--</td><td class="personCount-td">5人/18人</td><td class="Select-td"><button class="btn  Select-Btn del-btn">删除</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<!-- 第三志愿table -->
+						<div class="mC-table">
+							<table>
+								<thead>
+									<tr>
+										<th><img src="images/login_laba1.jpg"></th><th>单位名称<span class="zyTxt">（第三志愿）</span></th><th>职位</th><th>薪酬</th><th>实习日期</th><th>性别限制</th><th>需要/已选</th><th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="images/login_laba2.jpg"></td><td><a href="#">广州市第一军医人民附属医院</a></td><td>信息科主任</td><td class="money-td">4000元&nbsp;-&nbsp;5000元</td><td class="date-td">2016.09.14&nbsp;-&nbsp;2017.01.30</td><td>--&nbsp;--</td><td class="personCount-td">5人/18人</td><td class="Select-td"><button class="btn  Select-Btn del-btn">删除</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					
+
+					<section class="hxsxzy">
+						<div class="mC-head">
+							<div class="mC-head_title">
+								<div><h4>候选实习志愿</h4><span class="popoverSpan-hx" data-title="规则"  data-placement="bottom-right">（点击查看规则）</span></div>
+							</div>
+							<button class="btn saveBtn" title="仅保存您的当前编辑但不会被提交哦">仅保存</button>
+						</div>
+
+						<!-- 候选志愿table -->
+						<div class="mC-table">
+							<table>
+								<thead>
+									<tr>
+										<th><img src="images/login_laba1.jpg"></th><th>单位名称<span class="zyTxt animated infinite bounce">（候选志愿）</span></th><th>职位</th><th>薪酬</th><th>实习日期</th><th>性别限制</th><th>需要/已选</th><th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="images/login_laba2.jpg"></td><td><a href="#">广州市第一军医人民附属医院</a></td><td>信息科主任</td><td class="money-td">4000元&nbsp;-&nbsp;5000元</td><td class="date-td">2016.09.14&nbsp;-&nbsp;2017.01.30</td><td>--&nbsp;--</td><td class="personCount-td">5人/18人</td><td class="Select-td"><button class="btn  Select-Btn del-btn">删除</button></td>
+									</tr>
+									<tr>
+										<td><img src="images/login_laba2.jpg"></td><td><a href="#">广州市第一军医人民附属医院</a></td><td>信息科主任</td><td class="money-td">4000元&nbsp;-&nbsp;5000元</td><td class="date-td">2016.09.14&nbsp;-&nbsp;2017.01.30</td><td>--&nbsp;--</td><td class="personCount-td">5人/18人</td><td class="Select-td"><button class="btn  Select-Btn del-btn">删除</button></td>
+									</tr>
+									<tr>
+										<td><img src="images/login_laba2.jpg"></td><td><a href="#">广州市第一军医人民附属医院</a></td><td>信息科主任</td><td class="money-td">4000元&nbsp;-&nbsp;5000元</td><td class="date-td">2016.09.14&nbsp;-&nbsp;2017.01.30</td><td>--&nbsp;--</td><td class="personCount-td">5人/18人</td><td class="Select-td"><button class="btn  Select-Btn del-btn">删除</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<!-- 点击icon关闭顶部时间范围提示条 -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+		   $(".icon-cuo").click(function() {
+		   		$(".tip").hide();
+		   });
+		});
+	</script>
+	
+
+	<!-- 点击删除按钮 -->
+	<!-- <script type="text/javascript">
+        function delCourse(obj,course_offerred_id,course_offerred_selection_id) {
+           var table = obj.parentNode.parentNode.parentNode;
+                        
+            table.removeChild(obj.parentNode.parentNode);
+
+            if (table.childNodes.length<3) {
+                var oTr = document.createElement("tr");
+                oTr.id = "nullTr";
+                oTr.innerHTML='<td colspan="7">没有符合条件的记录</td>';
+                table.appendChild(oTr);
+            }
+            
+            var selectBtn = document.getElementById("selectBtn" + course_offerred_id);
+            oldTr=selectBtn.parentNode.parentNode;
+
+
+            var yxrs_XX=parseInt(oldTr.getElementsByClassName("yxrs_XX")[0].innerText);
+            oldTr.getElementsByClassName("yxrs_XX")[0].innerText=yxrs_XX-1;
+            selectBtn.disabled = false;
+            addClass(selectBtn, "select_Btn");
+
+
+			var numberOfPresentSelect = document.getElementById("numberOfPresentSelect");
+            numberOfPresentSelect.innerHTML = parseInt(numberOfPresentSelect.innerHTML) -1;
+        }
+
+	</script> -->
+	
+	<!-- 弹出框confirm -->
+	<!-- <script type="text/javascript" src="showBox/js/showBo.js"></script> -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$(".zyTxt").addClass('animated infinite bounceIn');
+
+			$(".del-btn").each(function(index){
+				// 点击删除按钮删除当前行
+				$(this).click(function() {
+					// Showbo.Msg.confirm('您确定删除这个志愿吗？');
+					// if() 
+					$(this).parent().parent().remove();
+				});
+
+				$(".mC-table tbody tr").each(function() {
+
+				});
+
+				
+			});
+
+			if($(".mC-table table tbody tr").length===0){
+				var oTr='<tr><td colspan="8">您还没有任何实习单位志愿哦，快去挑几家单位吧!</td></tr>';
+				// oTr.id = "nullTr";
+				// oTr.html('<td colspan="5">您还没有任何实习单位志愿哦，快去挑几家单位吧</td>');
+				$(".mC-table tbody").append(oTr);
+			}
+			
+
+
+		});
+	</script>
+
+
+	<!-- webUIpopover官方文档：https://github.com/sandywalker/webui-popover -->
+    <script type="text/javascript" src="webUIpopover/dist/jquery.webui-popover.min.js"></script>
+    <script type="text/javascript">
+    	$('.popoverSpan-hx').webuiPopover({
+    		content:'您在实习单位信息页面选择的所有实习单位，将首先自动放入本 <strong>候选实习志愿</strong> 表格内。<br><br><strong>候选实习志愿</strong> 和 <strong>第一第二第三实习志愿</strong>表格内的行，均可自由拖动排列顺序。<br><br><strong>候选实习志愿</strong> 表格不会被提交。',
+    		closeable:true,
+    		animation:'pop',
+    		// url:'#myContent'
+    		// trigger:'hover'
+    	});
+    	$('.popoverSpan-dydeds').webuiPopover({
+    		content:'您可以通过拖拽表格内的行，完成志愿的排序。<br><br> <strong>直接提交</strong> 后将无法修改，请谨慎操作。<br><br><strong>仅保存</strong> 指的是保存您各个志愿的排序，方便您再次修改，并不会被提交。',
+    		closeable:true,
+    		animation:'pop',
+    		// url:'#myContent'
+    		// trigger:'hover'
+    	});
+    </script>
+</body>
+</html>
+
+
+

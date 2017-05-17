@@ -1,0 +1,112 @@
+.mc-img{
+    overflow: hidden;
+    width:1100px;
+/*     text-align: center; */
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.mc-img .min-img{
+    width: 238px;
+    height: 238px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.mc-img figure:first-child div{
+    background-image: url(../images/hospitalImg2.jpg);
+}
+.mc-img figure:nth-child(2) div{
+    background-image: url(../images/hospitalImg1.jpg);
+}
+.mc-img figure:nth-child(3) div{
+    background-image: url(../images/hospitalImg3.jpg);
+}
+.mc-img figure:nth-child(4) div{
+    background-image: url(../images/hospitalImg4.jpg);
+}
+.max-img{
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+.mc-img figure{
+    background: #fff;
+    padding:10px;
+    border:1px solid #ccc;
+    float: left;
+/*     display: inline-block; */
+    margin:0;
+    margin-right: 20px;
+/*     margin-right: 20px; */
+/*     margin:10px; */
+}
+.mc-img figure:last-child{
+    margin:0;
+}
+.mc-img figure:hover{
+    cursor: zoom-in;
+}
+
+
+.info-table{
+/*     margin-top: 20px; */
+    width: 1100px;
+    margin:20px auto;
+    background: #fff;
+    border:1px solid #ccc;
+/*     box-shadow: 0px 0px 3px  #aaa; */
+}
+.info-table table{
+/*     padding: 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+/*     border-radius: 10px; */
+}
+.info-table th{
+    padding:10px;
+    border-bottom: 1px solid #aaa;
+    text-align: left;
+/*     width: 8%; */
+}
+.info-table th:first-child{
+    width: 2%;
+}
+.info-table th:first-child img{
+    width: 18px;
+}
+.info-table td{
+    color:#4A4A4A;
+    border-bottom: 1px solid #aaa;
+}
+
+.info-table th:nth-child(2){
+    width: 9%;
+    color:#199AD1;
+/*     font-weight: normal; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
