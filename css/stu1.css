@@ -95,6 +95,11 @@
     box-shadow: 0px 0px 3px  #aaa;
 }
 .mC-table table img{
+    /*     用户不选中文本，造成不必要的麻烦 */
+     -moz-user-select: none;
+      -ms-user-select: none;
+  -webkit-user-select: none; 
+
     margin:10px 10px 10px 0;
     width: 18px;
 }
@@ -116,9 +121,11 @@
 /*     text-decoration: underline; */
 }
 .mC-table td:nth-child(2){
+    text-align: left;
      padding-right: 55px;
 }
 .mC-table td:nth-child(3){
+    text-align: left;
      padding-right: 60px;
 }
 .mC-table td:nth-child(4){

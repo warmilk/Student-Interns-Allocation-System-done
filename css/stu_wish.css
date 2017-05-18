@@ -44,7 +44,11 @@
     border-radius: 7px;
     background: #34495E;
 }
-
+.submitBtn:active,
+.saveBtn:active{
+    background: #ccc;
+    color:#888;
+}
 
 
 
