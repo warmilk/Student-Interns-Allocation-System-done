@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<table id="table">
+	  <thead>
+	  <tr>
+	    <th class="handle">header1</th>
+	    <th class="handle">header2</th>
+	  </tr>
+	  </thead>
+	  <tbody>
+	  <tr>
+	    <td>conten1</td>
+	    <td>conten2</td>
+	  </tr>
+	  </tbody>
+	</table>
+	<script type="text/javascript" src="table-dragger/dist/table-dragger.min.js"></script>
+	<script type="text/javascript">
+		var el = document.getElementById('table');
+		var dragger = tableDragger(el, {
+		  mode: 'row',
+		  dragHandler: '.handle',
+		  onlyBody: true,
+		  animation: 300
+		});
+		dragger.on('drop',function(from, to){
+		  console(from);
+		  console(to);
+		});
+	</script>
+</body>
+</html>

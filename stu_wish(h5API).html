@@ -185,18 +185,18 @@
 							<table id="row-table">
 								<thead>
 									<tr>
-										<th class="handle"><img src="images/login_laba1.jpg"></th><th class="handle">单位名称<span class="zyTxt animated infinite bounce">（候选志愿）</span></th><th class="handle">职位</th><th class="handle">薪酬</th><th class="handle">实习日期</th><th class="handle">性别限制</th><th class="handle">需要/已选</th><th class="handle">操作</th>
+										<th><img src="images/login_laba1.jpg"></th><th>单位名称<span class="zyTxt animated infinite bounce">（候选志愿）</span></th><th>职位</th><th>薪酬</th><th>实习日期</th><th>性别限制</th><th>需要/已选</th><th>操作</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td><img src="images/login_laba2.jpg"></td><td><a href="#">广州市第一军医人民附属医院</a></td><td class="handle">信息科主任</td><td class="money-td">4000元&nbsp;-&nbsp;5000元</td><td class="date-td">2016.09.14&nbsp;-&nbsp;2017.01.30</td><td>--&nbsp;--</td><td class="personCount-td">5人/18人</td><td class="Select-td"><button class="btn  Select-Btn del-btn">删除</button></td>
+										<td><img src="images/login_laba2.jpg"></td><td><a href="#">广州市第一军医人民附属医院</a></td><td>信息科主任</td><td class="money-td">4000元&nbsp;-&nbsp;5000元</td><td class="date-td">2016.09.14&nbsp;-&nbsp;2017.01.30</td><td>--&nbsp;--</td><td class="personCount-td">5人/18人</td><td class="Select-td"><button class="btn  Select-Btn del-btn">删除</button></td>
 									</tr>
 									<tr>
-										<td><img src="images/login_laba2.jpg"></td><td><a href="#">佛山市第一人民附属医院</a></td><td class="handle">信息科主任</td><td class="money-td">4000元&nbsp;-&nbsp;5000元</td><td class="date-td">2016.09.14&nbsp;-&nbsp;2017.01.30</td><td>--&nbsp;--</td><td class="personCount-td">5人/18人</td><td class="Select-td"><button class="btn  Select-Btn del-btn">删除</button></td>
+										<td><img src="images/login_laba2.jpg"></td><td><a href="#">佛山市第一人民附属医院</a></td><td>信息科主任</td><td class="money-td">4000元&nbsp;-&nbsp;5000元</td><td class="date-td">2016.09.14&nbsp;-&nbsp;2017.01.30</td><td>--&nbsp;--</td><td class="personCount-td">5人/18人</td><td class="Select-td"><button class="btn  Select-Btn del-btn">删除</button></td>
 									</tr>
 									<tr>
-										<td><img src="images/login_laba2.jpg"></td><td><a href="#">佛山市南海区妇幼保健院</a></td><td class="handle">信息科主任</td><td class="money-td">4000元&nbsp;-&nbsp;5000元</td><td class="date-td">2016.09.14&nbsp;-&nbsp;2017.01.30</td><td>--&nbsp;--</td><td class="personCount-td">5人/18人</td><td class="Select-td"><button class="btn  Select-Btn del-btn">删除</button></td>
+										<td><img src="images/login_laba2.jpg"></td><td><a href="#">佛山市南海区妇幼保健院</a></td><td>信息科主任</td><td class="money-td">4000元&nbsp;-&nbsp;5000元</td><td class="date-td">2016.09.14&nbsp;-&nbsp;2017.01.30</td><td>--&nbsp;--</td><td class="personCount-td">5人/18人</td><td class="Select-td"><button class="btn  Select-Btn del-btn">删除</button></td>
 									</tr>
 								</tbody>
 							</table>
@@ -304,24 +304,7 @@
     </script>
 
 
-	<!-- table-dragger官方文档：https://github.com/sindu12jun/table-dragger -->
-    <script type="text/javascript" src="table-dragger/dist/table-dragger.min.js"></script>
-    <!-- <script type="text/javascript" src="table-dragger/dist/table-dragger.js.map"></script> -->
-    <script type="text/javascript">
-    	var el = document.getElementById('row-table');
-    	var dragger = tableDragger(el, {
-    	  mode: 'row',
-    	  dragHandler: '.handle',
-    	  onlyBody: true,
-    	  animation: 300
-    	});
-    	dragger.on('drop',function(from, to){
-    	  console(from);
-    	  console(to);
-    	});
-
-    	// tableDragger(document.querySelector("#row-table"), { mode: "row", onlyBody: true });
-    </script>
+	
 </body>
 </html>
 
