@@ -124,10 +124,10 @@
 						
 						<!-- 第一志愿的table -->
 						<div class="mC-table">
-							<table>
+							<table id="wish1-table">
 								<thead>
 									<tr>
-										<th><img src="images/login_laba1.jpg"></th><th>单位名称<span class="zyTxt">（第一志愿）</span></th><th>职位</th><th>薪酬</th><th>实习日期</th><th>性别限制</th><th>需要/已选</th><th>操作</th>
+										<th><img src="images/login_laba1.jpg"></th><th>单位名称<span class="zyTxt">（第一志愿）</span></th><th draggable="true">职位</th><th>薪酬</th><th>实习日期</th><th>性别限制</th><th>需要/已选</th><th>操作</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -140,10 +140,10 @@
 						
 						<!-- 第二志愿table -->
 						<div class="mC-table">
-							<table>
+							<table id="wish2-table">
 								<thead>
 									<tr>
-										<th><img src="images/login_laba1.jpg"></th><th>单位名称<span class="zyTxt">（第二志愿）</span></th><th>职位</th><th>薪酬</th><th>实习日期</th><th>性别限制</th><th>需要/已选</th><th>操作</th>
+										<th><img src="images/login_laba1.jpg"></th><th>单位名称<span class="zyTxt">（第二志愿）</span></th><th draggable="true">职位</th><th>薪酬</th><th>实习日期</th><th>性别限制</th><th>需要/已选</th><th>操作</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -156,10 +156,10 @@
 						
 						<!-- 第三志愿table -->
 						<div class="mC-table">
-							<table>
+							<table id="wish3-table">
 								<thead>
 									<tr>
-										<th><img src="images/login_laba1.jpg"></th><th>单位名称<span class="zyTxt">（第三志愿）</span></th><th>职位</th><th>薪酬</th><th>实习日期</th><th>性别限制</th><th>需要/已选</th><th>操作</th>
+										<th><img src="images/login_laba1.jpg"></th><th>单位名称<span class="zyTxt">（第三志愿）</span></th><th draggable="true">职位</th><th>薪酬</th><th>实习日期</th><th>性别限制</th><th>需要/已选</th><th>操作</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -182,10 +182,10 @@
 
 						<!-- 候选志愿table -->
 						<div class="mC-table">
-							<table id="row-table">
+							<table id="wishList-table">
 								<thead>
 									<tr>
-										<th class="handle"><img src="images/login_laba1.jpg"></th><th class="handle">单位名称<span class="zyTxt animated infinite bounce">（候选志愿）</span></th><th class="handle">职位</th><th class="handle">薪酬</th><th class="handle">实习日期</th><th class="handle">性别限制</th><th class="handle">需要/已选</th><th class="handle">操作</th>
+										<th class="handle"><img src="images/login_laba1.jpg"></th><th class="handle">单位名称<span class="zyTxt animated infinite bounce">（候选志愿）</span></th><th class="handle" draggable="true">职位</th><th class="handle">薪酬</th><th class="handle">实习日期</th><th class="handle">性别限制</th><th class="handle">需要/已选</th><th class="handle">操作</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -258,28 +258,25 @@
 
 			$(".del-btn").each(function(index){
 				// 点击删除按钮删除当前行
-				$(this).click(function() {
+				$(this).on("click",function () {
+					$(this).parents("tr").remove();
 					// Showbo.Msg.confirm('您确定删除这个志愿吗？');
-					// if() 
-					$(this).parent().parent().remove();
+					
+					if($("#wish1-table tbody tr").length===0){
+						$("#wish1-table tbody").append("<tr>"+"<td colspan='8' style='text-align:center;padding:0.8em 0;color:#bbb;'>您还没有填写第一实习志愿哦，快从候选志愿里拖拽一家进来吧！</td>"+"</tr>");
+					}
+					if($("#wish2-table tbody tr").length===0){
+						$("#wish2-table tbody").append("<tr>"+"<td colspan='8' style='text-align:center;padding:0.8em 0;color:#bbb;'>您还没有填写第二实习志愿哦，快从候选志愿里拖拽一家进来吧！</td>"+"</tr>");
+					}
+					if($("#wish3-table tbody tr").length===0){
+						$("#wish3-table tbody").append("<tr>"+"<td colspan='8' style='text-align:center;padding:0.8em 0;color:#bbb;'>您还没有填写第三实习志愿哦，快从候选志愿里拖拽一家进来吧！</td>"+"</tr>");
+					}
+					if($("#wishList-table tbody tr").length===0){
+						$("#wishList-table tbody").append("<tr>"+"<td colspan='8' style='text-align:center;padding:0.8em 0;color:#bbb;'>您还没有任何实习单位志愿哦，快去实习单位信息页面挑几家单位吧！</td>"+"</tr>");
+					}
 				});
-
-				$(".mC-table tbody tr").each(function() {
-
-				});
-
-				
 			});
-
-			if($(".mC-table table tbody tr").length===0){
-				var oTr='<tr><td colspan="8">您还没有任何实习单位志愿哦，快去挑几家单位吧!</td></tr>';
-				// oTr.id = "nullTr";
-				// oTr.html('<td colspan="5">您还没有任何实习单位志愿哦，快去挑几家单位吧</td>');
-				$(".mC-table tbody").append(oTr);
-			}
 			
-
-
 		});
 	</script>
 
@@ -321,6 +318,40 @@
     	});
 
     	// tableDragger(document.querySelector("#row-table"), { mode: "row", onlyBody: true });
+    </script>
+
+   <!--  <script type="text/javascript">
+    	$(function () {
+	    	//获取表格的行数
+	    	var tabRowLen = $("table tbody tr").length;
+	    	//点击add按钮时，
+	    	$("#add").on("click", function () {
+		    	//获取表格的行数
+		    	tabRowLen = $("table tbody tr").length;
+		    	var index = tabRowLen - 1;
+		    	//表格行数为0时，或者表格不存在空值时
+		    	if (IsNull(index) || tabRowLen === 0) {
+			    	//添加一行
+			    	$("table tbody").append("");
+			    	//删除一行
+			    	$(".add").on("click", function () {
+				    	$(this).parents("tr").remove();
+				    });
+	    	
+    	}
+
+    	var index = tabRowLen - 1;
+    	//表格行数为0时，或者表格不存在空值时
+    	if (IsNull(index) || tabRowLen === 0) {
+    		//添加一行
+    		$("table tbody").append('<tr>'+'<td colspan="8">您还没有任何实习单位志愿哦，快去挑几家单位吧！</td>'+'</tr>');
+    	}
+    </script> -->
+
+    
+    <!-- 防止图片被拖到新窗口打开 -->
+    <script language="javascript">
+    	$("img").bind("dragstart",function(){return false;});
     </script>
 </body>
 </html>

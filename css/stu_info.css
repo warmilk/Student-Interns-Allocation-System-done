@@ -1,0 +1,247 @@
+.del-btn{
+    background: #DD422C;
+}
+.mainContent{
+    min-height: 650px;
+}
+
+.mC-table .text-td td{
+    padding:10px 0;
+/*     text-align: left; */
+    width: 50px;
+    background:;
+}
+.mC-head_title{
+    margin-right: 0;
+}
+.mC-head_title h4{
+    display: inline-block;
+}
+.mC-head_title span{
+    margin-left: 1em;
+    color: #999;
+    cursor: pointer;
+}
+.mC-head_title span:hover{
+    color: #02B7FE;
+}
+
+
+.mC-head-rBtn,
+.mC-head-lBtn{
+    padding: 0 1.5em;
+    float: right;
+    display: inline-block;
+/*     vertical-align: -8px; */
+    margin-left: 10px;
+    position: relative;
+    
+    
+    height: 2em;
+    border-radius: 7px;
+   
+}
+.mC-head-rBtn{
+     background: #34495E;
+    font-size: 11px;
+}
+.mC-head-lBtn{
+    color: #34495E;
+    background: transparent;
+    font-size: 13px;
+}
+.mC-head-rBtn:active{
+    background: #ccc;
+    color:#888;
+}
+.mC-head-lBtn:hover{
+    color: #02B7FE;
+}
+
+
+/* =================================================================================== */
+.stu-set-item{
+    overflow: hidden;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin:20px auto 30px auto; 
+    clear: both;
+    width: 1100px;
+    background: #fff;
+    box-shadow: 0px 0px 3px  #aaa;
+    padding:35px 50px 20px 50px;
+}
+.stu-info-item{
+    height: 3.5em;
+}
+.stu-info-portrait-wrap{
+    text-align: right;
+    width: 144px;
+    float: right;
+    text-align: center;
+}
+
+
+
+.stu-info-input-wrap input{
+    
+
+    height: 1.5em;
+/*     border:1px solid #ccc; */
+/*     border-radius: 5px; */
+    border:none;
+    vertical-align: middle;
+}
+.stu-info-readonly .stu-info-input-wrap input:hover{
+    cursor: not-allowed;
+}
+.stu-info-sex-wrap>div{
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+
+.stu-info-sex-item{
+    float: left;
+    text-align:left;
+    margin-right: 2em;
+}
+
+.stu-info-sex-item span{
+    padding-left: 0.5em;
+}
+.stu-info-portrait-input{
+    width: 30px;
+}
+
+
+.stu-info-portrait-btn {
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    border-radius: 5px;
+    height: 2em;
+    padding:0 1em;
+    overflow: hidden;
+    color: #666;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 2em;
+}
+.stu-info-portrait-btn input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.stu-info-portrait-btn:hover {
+    color: #0F88EB;
+    text-decoration: none;
+}
+.stu-info-portrait{
+    border-radius: 5px;
+    border:1px solid #ccc;
+    width: 130px;
+    height: 190px;
+    background-image: url(../images/userPortrait.jpg);
+    background-size: cover;
+    background-position: center;
+    float: right;
+    margin-bottom: 1em;
+    background-repeat: no-repeat;
+}
+.stu-info-readonly{
+    width: 35%;
+    float: left;
+}
+.stu-info-editable{
+    width: 40%;
+    float: left;
+}
+.stu-info-label{
+    width: 25%;
+    text-align: right;
+    float: left;
+    padding-right: 1em;
+    line-height: 1.5em;
+}
+.stu-info-editable input{
+    border-radius: 4px;
+    height: 1.5em;
+    border:1px solid #bbb;
+    text-indent: 0.5em;
+    width: 45%;
+}
+.stu-info-editable input:focus{
+    border-color: #02B7FE;
+}
+.stu-info-birth-monthWrap{
+    padding-left: 10px;
+    display: inline-block;
+}
+.stu-info-editable select{
+    font-size: 12px;
+    border:none;
+    width: 100%;
+    border: solid 1px #ccc;    
+    appearance: none;/*清除select下拉框默认样式*/    
+  -moz-appearance: none;    
+  -webkit-appearance: none; 
+    text-indent:0.2em;
+}
+.stu-info-editable select:hover{
+    cursor: pointer;
+}
+.stu-info-selectIcon{
+    display: block;
+    border-color: #ccc transparent transparent transparent;
+    border-width: 5px;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 0.5em;
+    top: 75%;
+    transform: translateY(-75%);
+}
+.stu-info-select-wrap{
+    display: inline-block;
+    width: 22%;
+    position: relative;
+}
+
+
+
+
+.stu-account h4{
+    display: inline-block;
+}
+.stu-account button{
+    background: #12B5B0;
+    color:#fff;
+    padding:0.3em 0.6em; 
+    border-radius: 5px;
+    
+}
+.stu-account_pwModiBtnWrap{
+    float: right;
+    margin-top: -5px;
+}
+
+.PwModi-popbox{
+    top:25%;
+}
+.PwModi-popbox-subBtn{
+    width: 60%;
+    border-radius: 5px;
+    height: 2.5em;
+    background:#0F88EB;
+    color: #fff;
+    margin:2em auto 3em auto;
+    display: table;
+}
+
+

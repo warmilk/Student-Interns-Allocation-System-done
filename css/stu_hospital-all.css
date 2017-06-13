@@ -1,0 +1,17 @@
+.mC-table th:nth-child(2){
+    padding-right: 14em;
+}
+.mC-table th:nth-child(5){
+    padding:0 12em 0 1em;
+}
+.mC-table th:nth-child(6),
+.mC-table td:nth-child(6){
+    text-align: center;
+}
+.mC-table th:nth-child(6){
+    padding:0 2.5em;
+}
+.mC-table th:nth-child(7),
+.mC-table td:nth-child(7){
+    padding: 0 4em 0 1em;
+}

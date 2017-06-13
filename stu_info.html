@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+	<title>深圳市龙岗中心医院 | 实习分配系统</title>
+	<!-- 引入公共布局的css，头部的logo和搜索栏，以及左侧导航条，右侧主要内容区的公共布局和widge -->
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	
+	<!-- 从外部引入这个页面用到的小icon的iconfont -->
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_3xfq2v964oyldi.css">
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_0rarwsxllqiftj4i.css">
+
+	
+	<!-- webUIpopover -->
+	<link rel="stylesheet" type="text/css" href="webUIpopover/dist/jquery.webui-popover.min.css">
+
+	<!-- 弹出式确认框showbo -->
+	<link rel="stylesheet" type="text/css" href="showBox/css/showBo.css">
+	
+
+	<!-- 小动画animation -->
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
+
+	<!-- tooltipster -->
+	<link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css">
+
+	<!-- 自己写的 -->
+	<link rel="stylesheet" type="text/css" href="css/stu_info.css">
+
+
+
+
+	<!-- iCheck -->
+	<link rel="stylesheet" href="iCheck/flat/blue.css">
+    <link rel="stylesheet" type="text/css" href="css/font/font_3xfq2v964oyldi.css">
+	<link rel="stylesheet" type="text/css" href="css/popupBox.css">
+
+
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+	<![endif]-->
+</head>
+<body>
+	<!--[if lt IE 9]>
+		<div class="alert-danger" role="alert">
+			你的浏览器实在<strong>太太太太太太旧了</strong>，导致页面无法完美显示渲染。放学别走，升级完浏览器再说 → <a target="_blank" class="alert-danger-anchor" href="http://browsehappy.com">立即升级</a>
+		</div>
+	<![endif]-->
+
+	<div class="container">
+		<div class="header">
+			<header>
+				<div class="header-search">
+					<button class="btn"><span>高级搜索</span><i class="xk-shouqi-copy xsxkxtFont"></i></button>
+
+					<input type="text" name="" placeholder="请输入实习城市关键字"><button class="btn"><img src="images/main_searchIcon.png"></button>
+				</div>
+				<div class="header-logo1">
+					<img src="images/main_logo_1.jpg">
+				</div>
+				<div class="hearder-logo2">
+					<img src="images/main_logo_2.jpg">
+				</div>
+			</header>
+		</div>
+
+		<div class="content">
+			<main>
+				<!-- 左侧导航栏 -->
+				<div class="mainNav">
+					<div class="mainNav-li_usr">
+						<div class="wrapper">
+							<div class="mainNav-li_usr_tx">
+								<img src="images/mainNav-usr.png">
+							</div>
+							<div class="mainNav-li_usr_info">
+								<h4>邓曲英</h4>
+								<p>信工学院学生</p>
+							</div>
+						</div>
+					</div>
+					
+					<nav>
+						<div class="mainNav-li mainNav-li1">
+							<div class="wrapper">
+								<a href="javascript:void(0);"><img src="images/stu_nav3.png">实习单位信息</a>
+							</div>
+						</div>
+						<div class="mainNav-li mainNav-li2">
+							<div class="wrapper">
+								<a href="javascript:void(0);"><img src="images/stu_nav4.png">实习分配制度</a>
+							</div>
+						</div>
+						<div class="mainNav-li mainNav-li3">
+							<div class="wrapper">
+								<a href="javascript:void(0);"><img src="images/stu_nav2.png">我的实习志愿</a>
+							</div>
+						</div>
+						<div class="mainNav-li mainNav-li4">
+							<div class="wrapper">
+								<a href="javascript:void(0);"><img src="images/stu_nav1.png">实习分配结果</a>
+							</div>
+						</div>
+						<div class="mainNav-li mainNav-li5 mainNav-li_current">
+							<div class="wrapper">
+								<a href="javascript:void(0);"><img src="images/stu_nav1.png">个人资料</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+
+
+
+
+
+
+
+				<!-- 右侧主要内容区 -->
+				<div class="mainContent">
+					<!-- 顶部提示条 -->
+					<div class="tip">
+						<p>同学们请在&nbsp;<strong>2017年5月12日</strong>&nbsp;-&nbsp;<strong>2017年5月20日</strong>&nbsp;之内的时间范围完成志愿填报！否则过时将由教师手动分配！</p><i class="iconfont icon-cuo"></i>
+					</div>
+					
+
+
+					<!-- 个人资料 -->
+					<section class="stu-info-wrap">
+						<div class="mC-head">
+							<div class="mC-head_title">
+								<div><h4>个人资料</h4></div>
+							</div>
+							<button class="btn mC-head-rBtn saveBtn">保存</button>
+							<button class="btn mC-head-lBtn cancelBtn">取消</button>
+						</div>
+						
+						<div class="stu-info stu-set-item">
+							<!-- 小一寸照片 -->
+							<div class="stu-info-item stu-info-portrait-wrap">
+								<!-- 头像图片 -->
+								<div class="stu-info-portrait"></div>
+								<!-- 修改头像按钮 -->
+								<a href="javascript:;" class="stu-info-portrait-btn tooltip" title="请选择最近一年内的小一寸照片">上传照片
+								    <input type="file" name="" id=""  accept="image/png,image/jpeg,image/gif">
+								</a>
+							</div>
+							
+
+							<!-- 只可查阅不可编辑的个人信息 -->
+							<div class="stu-info-readonly">
+								<!-- 姓名 -->
+								<div class="stu-info-item stu-info-input-wrap">
+									<label for="stu-info-name"><span class="stu-info-label">姓名：</span></label>
+									<input id="stu-info-name" type="text" name="" value="邓曲英" readonly="readonly">
+								</div>
+								<!-- 性别 -->
+								<div class="stu-info-sex-wrap stu-info-item">
+									<span class="stu-info-label">性别：</span>
+									<div>
+										<label class="stu-info-sex-item"><input type="radio" name="user-sex" checked readonly="readonly"><span>男</span></label>
+										<label class="stu-info-sex-item"><input type="radio" name="user-sex" readonly="readonly"><span>女</span></label>
+									</div>
+								</div>
+								<!-- 学号 -->
+								<div class="stu-info-input-wrap stu-info-item">
+									<label for="stu-info-num"><span class="stu-info-label">学号：</span></label>
+									<input id="stu-info-num" type="text" name="" value="14209030095" readonly="readonly">
+								</div>
+								<!-- 学院 -->
+								<div class="stu-info-input-wrap stu-info-item">
+									<label for="stu-info-college"><span class="stu-info-label">学院：</span></label>
+									<input id="stu-info-college" type="text" name="" value="信息工程学院" readonly="readonly">
+								</div>
+								<!-- 专业 -->
+								<div class="stu-info-input-wrap stu-info-item">
+									<label for="stu_info-major"><span class="stu-info-label">专业：</span></label>
+									<input id="stu_info-major" type="text" name="" value="信息管理与信息系统" readonly="readonly">
+								</div>
+								<!-- 班级 -->
+								<div class="stu-info-input-wrap stu-info-item">
+									<label for="stu-info-classNo"><span class="stu-info-label">班级：</span></label>
+									<input id="stu-info-classNo" type="text" name="" value="3" readonly="readonly">
+								</div>
+								<!-- 籍贯 -->
+								<div class="stu-info-input-wrap stu-info-item">
+									<label for="stu-info-nativePlace"><span class="stu-info-label">籍贯：</span></label>
+									<input id="stu-info-nativePlace" type="text" name="" value="广东省佛山市" readonly="readonly">
+								</div>
+								<!-- 综测平均分 -->
+								<div class="stu-info-input-wrap stu-info-item">
+									<label for="stu-info-score"><span class="stu-info-label">综测平均分：</span></label>
+									<input id="stu-info-score" type="text" name="" value="63.5" readonly="readonly">
+								</div>
+							</div>
+							
+							
+							<!-- 可编辑的个人信息 -->
+							<div class="stu-info-editable">
+								<!-- 生日 -->
+								<div class="stu-info-item">
+									<label><span class="stu-info-label">生日：</span></label>
+									<div class="stu-info-select-wrap">
+										<div class="stu-info-selectIcon"></div>
+										<select id="stu-info-birth-year">
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option selected="selected">1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+											<option>1996年</option>
+										</select>
+									</div>
+									<div class="stu-info-select-wrap stu-info-birth-monthWrap">
+										<div class="stu-info-selectIcon"></div>
+										<select id="stu-info-birth-month">
+											<option>1月</option>
+											<option>2月</option>
+											<option>3月</option>
+											<option>4月</option>
+											<option>5月</option>
+											<option selected="selected">6月</option>
+											<option>7月</option>
+											<option>8月</option>
+											<option>9月</option>
+											<option>10月</option>
+											<option>11月</option>
+											<option>12月</option>
+										</select>
+									</div>
+								</div>
+
+								<!-- 身高 -->
+								<div class="stu-info-item">
+									<label for="stu-info-tell"><span class="stu-info-label">身高：</span></label>
+									<div class="stu-info-select-wrap">
+										<div class="stu-info-selectIcon"></div>
+										<select id="stu-info-tell">
+											<option>150及以下</option>
+											<option>151cm</option>
+											<option>152cm</option>
+											<option>153cm</option>
+											<option>154cm</option>
+											<option>155cm</option>
+											<option>156cm</option>
+											<option>157cm</option>
+											<option>158cm</option>
+											<option>159cm</option>
+											<option>160cm</option>
+											<option>161cm</option>
+											<option>162cm</option>
+											<option>163cm</option>
+											<option>164cm</option>
+											<option selected="selected">165cm</option>
+											<option>166cm</option>
+											<option>167cm</option>
+											<option>168cm</option>
+											<option>169cm</option>
+											<option>170cm</option>
+											<option>171cm</option>
+											<option>172cm</option>
+											<option>173cm</option>
+											<option>174cm</option>
+											<option>175cm</option>
+											<option>176cm</option>
+											<option>177cm</option>
+											<option>178cm</option>
+											<option>179cm</option>
+											<option>180cm</option>
+											<option>181cm</option>
+											<option>182cm</option>
+											<option>183cm</option>
+											<option>184cm</option>
+											<option>185cm</option>
+											<option>186cm</option>
+											<option>187cm</option>
+											<option>188cm</option>
+											<option>189cm</option>
+											<option>190及以上</option>
+										</select>
+									</div>
+								</div>
+
+								<!-- 体重 -->
+								<div class="stu-info-item">
+									<label for="stu-info-weight"><span class="stu-info-label">体重：</span></label>
+									<div class="stu-info-select-wrap">
+										<div class="stu-info-selectIcon"></div>
+										<select id="stu-info-weight">
+											<option>35kg及以下</option>
+											<option>36kg</option>
+											<option>37kg</option>
+											<option>38kg</option>
+											<option>39kg</option>
+											<option>40kg</option>
+											<option>41kg</option>
+											<option>42kg</option>
+											<option>43kg</option>
+											<option>44kg</option>
+											<option>45kg</option>
+											<option>46kg</option>
+											<option>47kg</option>
+											<option>48kg</option>
+											<option>49kg</option>
+											<option selected="selected">50kg</option>
+											<option>51kg</option>
+											<option>52kg</option>
+											<option>53kg</option>
+											<option>54kg</option>
+											<option>55kg</option>
+											<option>56kg</option>
+											<option>57kg</option>
+											<option>58kg</option>
+											<option>59kg</option>
+											<option>60kg</option>
+											<option>61kg</option>
+											<option>62kg</option>
+											<option>63kg</option>
+											<option>64kg</option>
+											<option>65kg</option>
+											<option>66kg</option>
+											<option>67kg</option>
+											<option>68kg</option>
+											<option>69kg</option>
+											<option>70kg</option>
+											<option>71kg</option>
+											<option>72kg</option>
+											<option>73kg</option>
+											<option>74kg</option>
+											<option>75kg</option>
+											<option>76kg</option>
+											<option>77kg</option>
+											<option>78kg</option>
+											<option>79kg</option>
+											<option>80kg及以上</option>
+										</select>
+									</div>
+								</div>
+
+								<!-- 健康状况 -->
+								<div class="stu-info-item">
+									<label for="stu-info-health"><span class="stu-info-label">健康状况：</span></label>
+									<div class="stu-info-select-wrap">
+										<div class="stu-info-selectIcon"></div>
+										<select id="stu-info-health">
+											<option>较差</option>
+											<option>一般</option>
+											<option selected="selected">良好</option>
+											<option>优秀</option>
+										</select>
+									</div>
+								</div>
+
+								<!-- 四六级 -->
+								<div class="stu-info-item">
+									<label for="stu-info-english"><span class="stu-info-label">四六级：</span></label>
+									<div class="stu-info-select-wrap">
+										<div class="stu-info-selectIcon"></div>
+										<select id="stu-info-english">
+											<option>均未过</option>
+											<option>四级已过</option>
+											<option selected="selected">六级已过</option>
+										</select>
+									</div>
+								</div>
+
+								<!-- 手机 -->
+								<div class="stu-info-item">
+									<label for="stu-info-phoneNo"><span class="stu-info-label">手机：</span></label>
+									<input id="stu-info-phoneNo" type="text" name="" placeholder="请输入您的常用手机号">
+								</div>
+
+								<!-- 邮箱 -->
+								<div class="stu-info-item">
+									<label for="stu-info-email"><span class="stu-info-label">邮箱：</span></label>
+									<input id="stu-info-email" type="text" name="" placeholder="请输入您的常用邮箱">
+								</div>
+							</div>
+						</div>
+					</section>
+					
+
+					<!-- 账号设置 -->
+					<section class="stu-account-wrap">
+						<div class="mC-head">
+							<div class="mC-head_title">
+								<div><h4>账号设置</h4></div>
+							</div>
+							<button class="btn mC-head-rBtn exitBtn">退出</button>
+						</div>
+						<div class="stu-set-item stu-account">
+							<h4>当前登录账号：</h4><span>14209030095</span>
+							<div class="stu-account_pwModiBtnWrap">
+								<button class="btn pwModiBtn">修改密码</button>
+							</div>
+						</div>
+					</section>
+				</div>
+
+
+
+				<!-- 半透明遮罩 -->
+				<div style="position: fixed; top: 0px; left: 0px; bottom: 0px; right:0px; background: rgb(0, 0, 0) none repeat scroll 0% 0%; opacity: 0.6; filter: alpha(opacity:60); z-index: 100; transform:scale(1.03); display: none;" id="mask"></div>
+				
+				
+				<!-- 修改密码弹出框 -->
+				<div class="PopupBox PwModi-popbox" style="display: none;">
+				    <h4 class="PopupBox-title title">修改密码</h4>
+				    <button class="btn closePrompt"><i class="xk-cuo xsxkxtFont"></i></button>
+				    <div class="pwModiContent">
+				        <div>
+				            <label><span class="left">验证旧密码：</span><input type="password" id="oldPwd" placeholder="请输入6-12位的旧密码"></label>
+				        </div>
+				        <div>
+				            <label><span class="left">请设置新密码：</span><input type="password" id="newPwd" placeholder="请输入6-12位的新密码"></label>
+				        </div>
+				        <div>
+				            <label><span class="left">再次输入新密码：</span><input type="password" id="confirmPwd" placeholder="请输入6-12位的新密码"></label>
+				        </div>
+				        <button class="btn PwModi-popbox-subBtn" type="button" onclick="editPwd();" id="qrxg">确认</button>
+				    </div>
+				    <div id="errorPwd" style="font-size: 14px; color: red; text-align:center;display:none"></div>
+				</div> 
+
+			</main>
+		</div>
+	</div>
+
+	
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// 点击icon关闭顶部时间范围提示条
+		   $(".icon-cuo").click(function() {
+		   		$(".tip").hide();
+		   });
+
+		   // 点击弹出修改密码
+		    $(".stu-account_pwModiBtnWrap").each(function(shareIndex) {
+		   		$(this).click(function() {
+		   			$(".PopupBox").show().addClass("animated rubberBand");
+		   			$("#mask").show();
+		   		});
+		    });
+
+		    // 点击关闭修改密码
+		    $(".closePrompt").each(function() {
+		   		$(this).click(function() {
+		   			$("#mask").hide();
+		   			$(".PopupBox").hide();
+		   		});
+		    });
+		});
+	</script>
+	
+	<!-- 男女性别的RadioBox -->
+    <script src="iCheck/icheck.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('input').iCheck({
+        checkboxClass: 'icheckbox_flat-blue',
+        radioClass: 'iradio_flat-blue'
+      });
+    });
+    </script>
+
+	<!-- tooltipster官方文档：http://iamceege.github.io/tooltipster/ -->
+	<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script> -->
+    <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+            $('.tooltip').tooltipster({
+                theme: 'tooltipster-shadow'
+            });
+        });	
+    </script>
+	
+    
+    <!-- 防止图片被拖到新窗口打开 -->
+    <script language="javascript">
+    	$("img").bind("dragstart",function(){return false;});
+    </script>
+</body>
+</html>
+
+
+

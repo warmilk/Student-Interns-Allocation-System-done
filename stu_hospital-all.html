@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_3xfq2v964oyldi.css">
 
 	<link rel="stylesheet" type="text/css" href="css/stu1.css">
+	<link rel="stylesheet" type="text/css" href="css/stu_hospital-all.css">
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
 	<![endif]-->
@@ -281,7 +282,10 @@
 
 		});
 	</script>
-
+	<!-- 防止图片被拖到新窗口打开 -->
+	<script language="javascript">
+		$("img").bind("dragstart",function(){return false;});
+	</script>
 
 </body>
 </html>

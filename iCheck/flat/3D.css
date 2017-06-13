@@ -1,0 +1,39 @@
+/* iCheck plugin Flat skin, 3D
+----------------------------------- */
+.icheckbox_flat-3D{
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding:0;
+    width: 14px;
+    height: 14px;
+    background: url(3D.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_flat-3D {
+    background-position: 0 0;
+}
+    .icheckbox_flat-3D.checked {
+        background-position: -14px 0;
+    }
+    .icheckbox_flat-3D.disabled {
+        background-position: -28px 0;/*background-position指定的是背景图片的左上角&容器元素的左上角的坐标偏移*/
+        cursor: default;
+    }
+    /*.icheckbox_flat-3D.checked.disabled {
+        background-position: -66px 0;
+    }*/
+
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+    .icheckbox_flat-3D,
+    .iradio_flat-3D {
+        background-image: url(3D@2x.png);
+        -webkit-background-size: 28px 14px;
+        background-size: 28px 14px;
+    }
+}
