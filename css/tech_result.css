@@ -1,6 +1,4 @@
-.mC-head-r{
-    float: right;
-}
+
 .mC-head_search{
     position: relative;
     float: left;
@@ -57,14 +55,8 @@
 }
 .dropdown-btn span{
     position: relative;
-    left: -0.75em;
 }
-.mC-head_sort i{
-    position: absolute;
-    right: -1.5em;
-/*     padding-left: 3%; */
-    font-size: 11px;
-}
+
 .mC-head_sortMeau{
 /*     display: inline-block; */
     overflow: hidden;
@@ -129,17 +121,17 @@
 .mC-table th:nth-child(1){
     padding:0;
 }.mC-table th:nth-child(2){
-    padding-right: 10em;
+    padding-right: 14em;
 }.mC-table th:nth-child(3){
-    padding-right: 9em;
+    padding-right: 8em;
 }.mC-table th:nth-child(4){
     padding-right: 11em;
 }.mC-table th:nth-child(5){
-    padding-right: 14em;
+    padding-right: 5em;
 }.mC-table th:nth-child(6){
-    padding-right: 5em;
+    padding-right: 8em;
 }.mC-table th:nth-child(7){
-    padding-right: 5em;
+    padding-right: 12em;
 }.mC-table th:nth-child(8){
     padding-right: 0;
 }
@@ -194,7 +186,9 @@
 }
 /* 回到顶部按钮结束 */
 
-
+.result-btn{
+    background: #12b5b0;
+}
 
 
 

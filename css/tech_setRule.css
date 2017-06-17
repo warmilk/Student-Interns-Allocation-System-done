@@ -1,0 +1,49 @@
+.role{
+/*     margin-top: 20px; */
+    border-radius:8px;
+    width: 1100px;
+    background: #fff;
+    margin:20px auto;
+    border: 1px solid #ccc;
+    box-sizing:border-box;
+    padding:10px;
+}
+.rule-item{
+    margin:25px;
+}
+  
+.rule-item span{
+    padding-bottom: 10px;
+    color: #888;
+    display: inline-block;
+}
+.rule-item .slider-container{
+    display: inline-block;
+}
+.rule-item div:hover{
+/*     cursor: not-allowed; */
+}
+
+
+.mC-head_sort .popoverBtn{
+    float: right;
+    display: inline-block;
+    vertical-align: -8px;
+    margin-left: 10px;
+    position: relative;
+    font-size: 11px;
+    width: 88px;
+    height: 22px;
+    border-radius: 7px;
+    background: #34495E;
+}
+
+
+
+
+
+
+
+
+
+

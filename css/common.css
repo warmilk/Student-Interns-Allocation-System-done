@@ -182,7 +182,6 @@ body{
 /*     overflow: hidden; */
 }
 .mC-head_title{
-    margin-right: 625px;
     float: left;
 }
 .mC-head_title h4{
@@ -195,7 +194,9 @@ body{
     padding:0 10px;
     color:#7C7C7C;
 }
-
+.mC-head-r{
+    float: right;
+}
 
 
 

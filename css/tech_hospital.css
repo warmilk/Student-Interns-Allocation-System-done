@@ -1,0 +1,128 @@
+.mC-head-btn{
+    float: right;
+    margin-left: 12px;
+}
+.mC-head-btn button{
+    padding:0.5em 1em;
+    
+}
+.refreshBtn{
+    font-size: 12px;
+    background: transparent;
+    color: #34495E;
+}
+.sendBtn{
+    border-radius: 50px;
+    font-size: 11px;
+    background: #34495E;
+    color: #fff;
+}
+.sendBtn:hover{
+    background: #12B5B0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.importFile-wrap{
+    width: 1100px;
+    margin:20px auto 60px auto;
+}
+.importFile-item{
+    position: relative;
+    display: inline-block;
+    width:33%;
+}
+.selectFile-btn-wrap{
+    display: inline-block;
+    position: relative;
+    display: inline-block;
+    background-image: url(../images/importFile.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 6em;
+    width: 6em;
+    overflow: hidden;
+    text-indent: 0;
+}
+.selectFile-btn-wrap input{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.importFile-r{
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left: 7em;
+}
+
+.importFile-cityName-wrap input{
+    height: 20px;
+    border-radius: 5px;
+/*     border:1px solid #ccc; */
+    border:none;
+    height: 1.5em;
+    text-indent: 0.5em;
+    background:transparent;
+}
+.importFile-cityName-wrap input:focus{
+    background: #fff;
+}
+.importFile-btn-wrap{
+    margin-top: 2em;
+    overflow: hidden;
+}
+.importFile-subBtn-wrap{
+    float: left;
+}
+.importFile-cancelBtn-wrap{
+    float: right;
+}
+.importFile-btn-wrap button{
+    width: 65px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 11px;
+}
+.importFile-cancelBtn{
+    color: #888;
+    background: #ddd;
+}
+.importFile-subBtn{
+    background: #12B5B0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
